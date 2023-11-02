@@ -1,12 +1,12 @@
 import * as vscode from 'vscode';
 import { getSelectedText, showStatusMessage, hideStatusMessage } from './utils';
-import { Search } from './search';
+import { Commands } from './commands';
 
 export class ComponentDefinitionProvider implements vscode.DefinitionProvider {
 
-    search: Search;
+    search: Commands;
 
-    constructor(search: Search) {
+    constructor(search: Commands) {
         this.search = search;
     }
 
